@@ -1,9 +1,9 @@
 <%@ page language="java" contentType="text/html; charset=UTF-8" pageEncoding="UTF-8"%>
     <%@page import="bean.bookBean.*"%>
 <% 
-		request.setCharacterEncoding("UTF-8");
-		//response.setCharacterEncoding("UTF-8");
-	%>
+	request.setCharacterEncoding("UTF-8");
+	response.setCharacterEncoding("UTF-8");
+%>
     <jsp:useBean id="book" class="bean.bookBean" scope="page">
     <jsp:setProperty name="book" property="*"/>
     	<%-- <jsp:setProperty name="book" property="bookName"/>
@@ -26,6 +26,7 @@
 	<br>
 	<span>数量 : </span><%= book.getbookNum() %>
 	<br>
+	
 
 </body>
 </html>

@@ -1,4 +1,14 @@
 <?xml version="1.0" encoding="UTF-8"?>
+<!--<servlet>
+		<serclet-name>hello</servlet-name>
+		<servlet-class>
+			org.lxh.servletdemo.HelloServlet
+		</servlet-class>
+	</servlet>
+<servlet-mapping>
+		<servlet-name>hello</servlet-name>
+		<url-pattern>helloServlet</url-pattern>
+</servlet-mapping>-->
 <web-app xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns="http://xmlns.jcp.org/xml/ns/javaee" xsi:schemaLocation="http://xmlns.jcp.org/xml/ns/javaee http://xmlns.jcp.org/xml/ns/javaee/web-app_3_1.xsd" id="WebApp_ID" version="3.1">
   <display-name>MyJavaWeb</display-name>
   <welcome-file-list>
@@ -9,4 +19,5 @@
     <welcome-file>default.htm</welcome-file>
     <welcome-file>default.jsp</welcome-file>
   </welcome-file-list>
+	
 </web-app>

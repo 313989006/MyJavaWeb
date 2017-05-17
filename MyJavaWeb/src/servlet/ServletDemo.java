@@ -40,7 +40,6 @@ public class ServletDemo extends HttpServlet {
 		out.print("</HTML>");
 		out.close();//关闭输出流
 	}
-
 	/**
 	 * @see HttpServlet#doPost(HttpServletRequest request, HttpServletResponse response)
 	 */

@@ -9,7 +9,7 @@
 <body>
 	<h2>请输入用户信息:</h2>
 	<br/>
-	<form method="get" action="<%=request.getContextPath() %>/Servlet/MyNewLoginServlet">
+	<form method="get" action="<%=request.getContextPath() %>/Servlet/MyLoginServletDemo">
 	<span>用户名 : </span><input type="text" name="username"><br/>
 	<span>密码: </span><input type="password" name="password">
 	<p>

@@ -12,7 +12,7 @@ import javax.servlet.http.HttpServletResponse;
 /**
  * Servlet implementation class MyLoginServletDemo
  */
-/*@WebServlet("/Servlet/MyLoginServletDemo")*/
+@WebServlet("/Servlet/MyLoginServletDemo")
 public class MyNewLoginServlet extends HttpServlet {
 	private static final long serialVersionUID = 1L;
 
@@ -26,20 +26,20 @@ public class MyNewLoginServlet extends HttpServlet {
 		out.println("<HTML>");
 		out.println("<HEAD><TITLE>用servlet测试get和post方法</TITLE></HEAD>");
 		out.println("<BODY>");
-		out.println("<h2>调用了doGet方法</h2><p>");
+		out.println("<h2>调用了doGet方法</h2>");
 		out.println("<h2>用户输入信息如下：</h2>");
 		String username =request.getParameter("username");
 		if (username==null || username=="")
 		{
 			username="未输入";
 		}
-		String password =request.getParameter("password");
-			if (password==null || password=="")
+		String pwd =request.getParameter("password");
+			if (pwd==null || pwd=="")
 			{
-				password="未输入";
+				pwd="未输入";
 			}
 		out.println("<h2>用户名 :" + username + "</h2>");
-		out.println("<h2>密 码 :"+ password + "</h2>");
+		out.println("<h2>密 码 :"+ pwd + "</h2>");
 		out.println("</BODY>");
 		out.println("</HTML>");
 		out.close();
@@ -55,20 +55,20 @@ public class MyNewLoginServlet extends HttpServlet {
 		out.println("<HTML>");
 		out.println("<HEAD><TITLE>用servlet测试get和post方法</TITLE></HEAD>");
 		out.println("<BODY>");
-		out.println("<h2>调用了doPost方法</h2><p>");
+		out.println("<h2>调用了doPost方法</h2>");
 		out.println("<h2>用户输入信息如下：</h2>");
 		String username =request.getParameter("username");
 		if (username==null || username=="")
 		{
 			username="未输入";
 		}
-		String password =request.getParameter("password");
-			if (password==null || password=="")
+		String pwd =request.getParameter("password");
+			if (pwd==null || pwd=="")
 			{
-				password="未输入";
+				pwd="未输入";
 			}
 		out.println("<h2>用户名: "+ username + "</h2>");
-		out.println("<h2>密 码 : "+ password + "</h2>");
+		out.println("<h2>密 码 : "+ pwd + "</h2>");
 		out.println("</BODY>");
 		out.println("</HTML>");
 		out.close();

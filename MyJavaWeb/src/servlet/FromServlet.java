@@ -37,7 +37,7 @@ public class FromServlet extends HttpServlet {
 		session.setAttribute("fromSession", str);
 		ServletContext context=getServletConfig().getServletContext();
 		context.setAttribute("fromContext", str);
-		context.getRequestDispatcher("/display").forward(request,response);
+		context.getRequestDispatcher("/Servlet/DisplayServlet").forward(request,response);
 	}
 
 	/**

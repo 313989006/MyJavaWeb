@@ -45,25 +45,22 @@
     <servlet-name>ServletConfigDemo</servlet-name>
     <url-pattern>/Servlet/ServletConfigDemo</url-pattern>
   </servlet-mapping>
-  
   <filter>
-  	<filter-name>FilterDemo</filter-name>
-  	<filter-class>/MyJavaWeb/src/filter/FilterDemo</filter-class>
-  	<init-param>
-  		<description>use UTF-8</description>
-  		<param-name>name</param-name>
-  		<param-value>UTF-8</param-value>
-  	</init-param>
+    <filter-name>FilterDemo</filter-name>
+    <filter-class>filter.FilterDemo</filter-class>
+    <init-param>
+      <description>use UTF-8</description>
+      <param-name>name</param-name>
+      <param-value>UTF-8</param-value>
+    </init-param>
   </filter>
-  
   <filter-mapping>
-  	<filter-name>FilterDemo</filter-name>
-  	<servlet-name>DisplayServlet</servlet-name>
-  	<url-pattern>/Filter/FilterDemo</url-pattern>
-  	<dispatcher>REQUEST</dispatcher>
-  	<dispatcher>ERROR</dispatcher>
-  	<dispatcher>FORWARD</dispatcher>
-  	<dispatcher>INCLUDE</dispatcher>
+    <filter-name>FilterDemo</filter-name>
+    <servlet-name>DisplayServlet</servlet-name>
+    <url-pattern>/Filter/FilterDemo</url-pattern>
+    <dispatcher>REQUEST</dispatcher>
+    <dispatcher>ERROR</dispatcher>
+    <dispatcher>FORWARD</dispatcher>
+    <dispatcher>INCLUDE</dispatcher>
   </filter-mapping>
-  
 </web-app>

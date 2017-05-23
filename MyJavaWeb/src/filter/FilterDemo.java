@@ -14,7 +14,7 @@ import javax.servlet.annotation.WebInitParam;
 /**
  * Servlet Filter implementation class FilterDemo
  */
-@WebFilter(
+/*@WebFilter(
 		dispatcherTypes = {
 				DispatcherType.REQUEST, 
 				DispatcherType.FORWARD, 
@@ -26,7 +26,7 @@ import javax.servlet.annotation.WebInitParam;
 		urlPatterns = { "/Filter/FilterDemo" }, 
 		initParams = { 
 				@WebInitParam(name = "name", value = "charset")
-		})
+		})*/
 public class FilterDemo implements Filter {
 
     /**

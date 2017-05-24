@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Frameset//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-frameset.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+
+	<!-- 加载条（绿色）到100% -->
+<meta charset="UTF-8">
+	<title>Title</title>
+	<style>
+.box {
+	width: 800px;
+	border: 1px solid blue;
+	margin: 0 auto;
+	height: 50px;
+	margin-bottom: 10px;
+}
+
+.loading {
+	background-color: #3c763d;
+	height: 50px;
+	width: 0;
+	color: white;
+	text-align: center;
+	line-height: 50px;
+}
+</style>
+</head>
+<body>
+	<div class="box">
+		<div class="loading" id="loading" style="width: 0px;">50%</div>
+	</div>
+	<div class="box">
+		<div class="loading" id="loading2" style="width: 0px;">50%</div>
+	</div>
+	<div class="box">
+		<div class="loading" id="loading3" style="width: 0px;">50%</div>
+	</div>
+	<script>
+		function Loading(loadingId, speed) {
+			function doLoading() {
+				var loadObj = document.getElementById(loadingId);
+				var w = parseInt(loadObj.style.width);
+				var max = 800;
+				console.log(w);
+				if (w >= 800) {
+					clearInterval(intervalObj);
+				}
+				loadObj.style.width = (w + speed) + 'px';
+				loadObj.innerHTML = Math.floor(w / max * 100) + "%";
+
+				console.log(loadObj.style.width);
+			}
+			var intervalObj = setInterval(doLoading, 10);
+		}
+		Loading('loading', 1);
+		Loading('loading2', 2);
+		Loading('loading3', 4);
+	</script>
+
+</body>
+</html>
